@@ -2,12 +2,15 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { useEffect, useState } from 'react';
 import Map, { FullscreenControl, GeolocateControl, Marker, NavigationControl, Source, Layer } from 'react-map-gl';
 function App() {
+  // eslint-disable-next-line
   const [start, setStart] = useState([22, 79.1]);
+  // eslint-disable-next-line
   const [end, setEnd] = useState([21, 79]);
   const [coordinates, setCoordinates] = useState([]);
-
+  
   useEffect(() => {
     getRoute();
+    // eslint-disable-next-line
   }, [end,start])
 
 
